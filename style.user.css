@@ -50,145 +50,57 @@
     /* Licence    : GNU General Public License v3.0 */
     /*Main color variables*/
     :root {
+
+        --main-background: #EFF1F5;
+        --main-background-rgb: 239, 241, 245;
+        --second-background: #E6E9EF;
+        --hover-background: #CCD0DA;
+        --main-text: #4C4F69;
+        --dimmer-text: #7C7F93;
+        --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+        --sprite: "https://raw.githubusercontent.com/8279279374/lb/main/assets/sprite.svg";
+
         if stylus-deepdark-style=="Catppuccin-Latte-Green" {
             --main-color: #40A02B;
-            --main-background: #EFF1F5;
-            --main-background-rgb: 239, 241, 245;
-            --second-background: #E6E9EF;
-            --hover-background: #CCD0DA;
-            --main-text: #4C4F69;
-            --dimmer-text: #7C7F93;
-            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Lavender" {
             --main-color: #7287FD;
-            --main-background: #EFF1F5;
-            --main-background-rgb: 239, 241, 245;
-            --second-background: #E6E9EF;
-            --hover-background: #CCD0DA;
-            --main-text: #4C4F69;
-            --dimmer-text: #7C7F93;
-            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Flamingo" {
             --main-color: #DD7878;
-            --main-background: #EFF1F5;
-            --main-background-rgb: 239, 241, 245;
-            --second-background: #E6E9EF;
-            --hover-background: #CCD0DA;
-            --main-text: #4C4F69;
-            --dimmer-text: #7C7F93;
-            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Mauve" {
             --main-color: #8839EF;
-            --main-background: #EFF1F5;
-            --main-background-rgb: 239, 241, 245;
-            --second-background: #E6E9EF;
-            --hover-background: #CCD0DA;
-            --main-text: #4C4F69;
-            --dimmer-text: #7C7F93;
-            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Pink" {
             --main-color: #EA76CB;
-            --main-background: #EFF1F5;
-            --main-background-rgb: 239, 241, 245;
-            --second-background: #E6E9EF;
-            --hover-background: #CCD0DA;
-            --main-text: #4C4F69;
-            --dimmer-text: #7C7F93;
-            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Red" {
             --main-color: #D20F39;
-            --main-background: #EFF1F5;
-            --main-background-rgb: 239, 241, 245;
-            --second-background: #E6E9EF;
-            --hover-background: #CCD0DA;
-            --main-text: #4C4F69;
-            --dimmer-text: #7C7F93;
-            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Peach" {
             --main-color: #FE640B;
-            --main-background: #EFF1F5;
-            --main-background-rgb: 239, 241, 245;
-            --second-background: #E6E9EF;
-            --hover-background: #CCD0DA;
-            --main-text: #4C4F69;
-            --dimmer-text: #7C7F93;
-            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Yellow" {
             --main-color: #DF8E1D;
-            --main-background: #EFF1F5;
-            --main-background-rgb: 239, 241, 245;
-            --second-background: #E6E9EF;
-            --hover-background: #CCD0DA;
-            --main-text: #4C4F69;
-            --dimmer-text: #7C7F93;
-            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Teal" {
             --main-color: #179299;
-            --main-background: #EFF1F5;
-            --main-background-rgb: 239, 241, 245;
-            --second-background: #E6E9EF;
-            --hover-background: #CCD0DA;
-            --main-text: #4C4F69;
-            --dimmer-text: #7C7F93;
-            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Blue" {
             --main-color: #1E66F5;
-            --main-background: #EFF1F5;
-            --main-background-rgb: 239, 241, 245;
-            --second-background: #E6E9EF;
-            --hover-background: #CCD0DA;
-            --main-text: #4C4F69;
-            --dimmer-text: #7C7F93;
-            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Sky" {
             --main-color: #04A5E5;
-            --main-background: #EFF1F5;
-            --main-background-rgb: 239, 241, 245;
-            --second-background: #E6E9EF;
-            --hover-background: #CCD0DA;
-            --main-text: #4C4F69;
-            --dimmer-text: #7C7F93;
-            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Maroon" {
             --main-color: #E64553;
-            --main-background: #EFF1F5;
-            --main-background-rgb: 239, 241, 245;
-            --second-background: #E6E9EF;
-            --hover-background: #CCD0DA;
-            --main-text: #4C4F69;
-            --dimmer-text: #7C7F93;
-            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Sapphire" {
             --main-color: #209FB5;
-            --main-background: #EFF1F5;
-            --main-background-rgb: 239, 241, 245;
-            --second-background: #E6E9EF;
-            --hover-background: #CCD0DA;
-            --main-text: #4C4F69;
-            --dimmer-text: #7C7F93;
-            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Rosewater" {
             --main-color: #DC8A78;
-            --main-background: #EFF1F5;
-            --main-background-rgb: 239, 241, 245;
-            --second-background: #E6E9EF;
-            --hover-background: #CCD0DA;
-            --main-text: #4C4F69;
-            --dimmer-text: #7C7F93;
-            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
         else if stylus-deepdark-style=="Custom" {
             --main-color: mainColor;
@@ -200,7 +112,6 @@
             --dimmer-text: dimmerText;
             --shadow: 0 1px 0.5px colorShadow;
         }
-        --sprite: "https://raw.githubusercontent.com/8279279374/lb/main/assets/sprite.svg";
     }
 
 * {
