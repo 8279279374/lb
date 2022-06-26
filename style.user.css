@@ -471,7 +471,7 @@ a.target:hover,
 	border-bottom: none;
 }
 .action-large .action::before {
-    background-image: var(--sprite);
+    background-image: url(var(--sprite));
 }
 
 @css { /* https://github.com/stylus/stylus/issues/2380 */
