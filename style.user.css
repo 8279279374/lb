@@ -385,6 +385,9 @@ a.target:hover,
 .action-large .action::before {
     background-image: var(--sprite);
 }
+div.panel-rateit div.rateit-hover, div.panel-rateit div.rateit-range, div.panel-rateit div.rateit-selected {
+    background-image: var(--sprite);
+}
 
 @css { /* https://github.com/stylus/stylus/issues/2380 */
 .backdrop-wrapper > .backdropmask::before {
