@@ -1,0 +1,529 @@
+/* ==UserStyle==
+@name letterboxd Catppuccin-Latte
+@namespace letterboxd Catppuccin-Latte
+
+@version 0.1
+
+@description Soothing pastel theme for letterboxd
+@author elkrien based on RaitaroH Youtube-DeepDark (github.com/RaitaroH/YouTube-DeepDark)
+@license GNU-V3.0
+
+@preprocessor stylus
+
+@var select stylus-deepdark-style "Preset themes" [
+    "Catppuccin-Latte-Green",
+    "Catppuccin-Latte-Flamingo",
+    "Catppuccin-Latte-Mauve",
+    "Catppuccin-Latte-Pink",
+    "Catppuccin-Latte-Lavender",
+    "Catppuccin-Latte-Red",
+    "Catppuccin-Latte-Peach",
+    "Catppuccin-Latte-Yellow",
+    "Catppuccin-Latte-Teal",
+    "Catppuccin-Latte-Blue",
+    "Catppuccin-Latte-Sky",
+  "Catppuccin-Latte-Maroon",
+  "Catppuccin-Latte-Sapphire",
+  "Catppuccin-Latte-Rosewater",
+    "Custom"
+]
+
+@var checkbox join-color "Use dark join button" 0
+@var checkbox subscribe-color "Use dark subscribe button" 0
+
+@var text scrollbar_width "Scrollbar width" 6px
+@var color scrollbar_track "Scrollbar background" "rgba(0,0,0, 0)"
+
+@var color mainColor "Custom main color" "#1E66F5"
+@var color mainBackground "Custom main background" "#EFF1F5"
+@var color secondBackground "Custom second background" "#E6E9EF"
+@var color hoverBackground "Custom hover background" "#CCD0DA"
+@var color mainText "Custom main text" "#4C4F69"
+@var color dimmerText "Custom second text" "#7C7F93"
+@var color colorShadow "Custom shadow color" "rgba(56, 60, 74, .3)"
+
+==/UserStyle== */
+@-moz-document domain('letterboxd.com') {
+    /* Author     : Theme made by RaitaroH & modified for Catppuccin by elkrien */
+    /* Co-authors : https://github.com/MechaLynx https://github.com/MaximeRF */
+    /* Home       : https://github.com/catppuccin/YouTube */
+    /* Licence    : GNU General Public License v3.0 */
+    /*Main color variables*/
+    :root {
+        if stylus-deepdark-style=="Catppuccin-Latte-Green" {
+            --main-color: #40A02B;
+            --main-background: #EFF1F5;
+            --main-background-rgb: 239, 241, 245;
+            --second-background: #E6E9EF;
+            --hover-background: #CCD0DA;
+            --main-text: #4C4F69;
+            --dimmer-text: #7C7F93;
+            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Lavender" {
+            --main-color: #7287FD;
+            --main-background: #EFF1F5;
+            --main-background-rgb: 239, 241, 245;
+            --second-background: #E6E9EF;
+            --hover-background: #CCD0DA;
+            --main-text: #4C4F69;
+            --dimmer-text: #7C7F93;
+            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Flamingo" {
+            --main-color: #DD7878;
+            --main-background: #EFF1F5;
+            --main-background-rgb: 239, 241, 245;
+            --second-background: #E6E9EF;
+            --hover-background: #CCD0DA;
+            --main-text: #4C4F69;
+            --dimmer-text: #7C7F93;
+            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Mauve" {
+            --main-color: #8839EF;
+            --main-background: #EFF1F5;
+            --main-background-rgb: 239, 241, 245;
+            --second-background: #E6E9EF;
+            --hover-background: #CCD0DA;
+            --main-text: #4C4F69;
+            --dimmer-text: #7C7F93;
+            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Pink" {
+            --main-color: #EA76CB;
+            --main-background: #EFF1F5;
+            --main-background-rgb: 239, 241, 245;
+            --second-background: #E6E9EF;
+            --hover-background: #CCD0DA;
+            --main-text: #4C4F69;
+            --dimmer-text: #7C7F93;
+            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Red" {
+            --main-color: #D20F39;
+            --main-background: #EFF1F5;
+            --main-background-rgb: 239, 241, 245;
+            --second-background: #E6E9EF;
+            --hover-background: #CCD0DA;
+            --main-text: #4C4F69;
+            --dimmer-text: #7C7F93;
+            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Peach" {
+            --main-color: #FE640B;
+            --main-background: #EFF1F5;
+            --main-background-rgb: 239, 241, 245;
+            --second-background: #E6E9EF;
+            --hover-background: #CCD0DA;
+            --main-text: #4C4F69;
+            --dimmer-text: #7C7F93;
+            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Yellow" {
+            --main-color: #DF8E1D;
+            --main-background: #EFF1F5;
+            --main-background-rgb: 239, 241, 245;
+            --second-background: #E6E9EF;
+            --hover-background: #CCD0DA;
+            --main-text: #4C4F69;
+            --dimmer-text: #7C7F93;
+            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Teal" {
+            --main-color: #179299;
+            --main-background: #EFF1F5;
+            --main-background-rgb: 239, 241, 245;
+            --second-background: #E6E9EF;
+            --hover-background: #CCD0DA;
+            --main-text: #4C4F69;
+            --dimmer-text: #7C7F93;
+            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Blue" {
+            --main-color: #1E66F5;
+            --main-background: #EFF1F5;
+            --main-background-rgb: 239, 241, 245;
+            --second-background: #E6E9EF;
+            --hover-background: #CCD0DA;
+            --main-text: #4C4F69;
+            --dimmer-text: #7C7F93;
+            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Sky" {
+            --main-color: #04A5E5;
+            --main-background: #EFF1F5;
+            --main-background-rgb: 239, 241, 245;
+            --second-background: #E6E9EF;
+            --hover-background: #CCD0DA;
+            --main-text: #4C4F69;
+            --dimmer-text: #7C7F93;
+            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Maroon" {
+            --main-color: #E64553;
+            --main-background: #EFF1F5;
+            --main-background-rgb: 239, 241, 245;
+            --second-background: #E6E9EF;
+            --hover-background: #CCD0DA;
+            --main-text: #4C4F69;
+            --dimmer-text: #7C7F93;
+            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Sapphire" {
+            --main-color: #209FB5;
+            --main-background: #EFF1F5;
+            --main-background-rgb: 239, 241, 245;
+            --second-background: #E6E9EF;
+            --hover-background: #CCD0DA;
+            --main-text: #4C4F69;
+            --dimmer-text: #7C7F93;
+            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+        }
+        else if stylus-deepdark-style=="Catppuccin-Latte-Rosewater" {
+            --main-color: #DC8A78;
+            --main-background: #EFF1F5;
+            --main-background-rgb: 239, 241, 245;
+            --second-background: #E6E9EF;
+            --hover-background: #CCD0DA;
+            --main-text: #4C4F69;
+            --dimmer-text: #7C7F93;
+            --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+        }
+        else if stylus-deepdark-style=="Custom" {
+            --main-color: mainColor;
+            --main-background: mainBackground;
+            --main-background-rgb: 239, 241, 245;
+            --second-background: secondBackground;
+            --hover-background: hoverBackground;
+            --main-text: mainText;
+            --dimmer-text: dimmerText;
+            --shadow: 0 1px 0.5px colorShadow;
+        }
+    }
+
+* {
+    scrollbar-color: var(--main-color) scrollbar_track !important;
+    scrollbar-width: thin !important;
+    --yt-spec-text-primary: var(--main-text) !important;
+    --yt-spec-text-secondary: var(--dimmer-text) !important;
+    --paper-spinner-color: var(--dimmer-text) !important;
+
+    --paper-radio-button-unchecked-color: var(--dimmer-text) !important;
+    --paper-radio-button-unchecked-background-color: transparent !important;
+    --paper-radio-button-checked-color: var(--main-color) !important;
+    --paper-radio-button-checked-ink-color: var(--main-color) !important;
+    --paper-radio-button-unchecked-ink-color: var(--main-color) !important;
+
+    --paper-checkbox-unchecked-color: var(--dimmer-text) !important;
+    --paper-checkbox-checked-color: var(--main-color) !important;
+    --paper-checkbox-checkmark-color: none !important;
+    --paper-checkbox-checked-ink-color: var(--main-color) !important;
+    --paper-checkbox-unchecked-ink-color: var(--main-color) !important;
+}
+/*Scrollbar fix for chrome*/
+*:not([hide-scrollbar]) ::-webkit-scrollbar-thumb {
+    background: var(--main-color) !important;
+}
+*:not([hide-scrollbar]) ::-webkit-scrollbar {
+    width: scrollbar_width !important;
+}
+/*Scrollbar fix for firefox*/
+::-webkit-scrollbar-track {
+    background: scrollbar_track !important;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--main-color) !important;
+}
+::selection {
+	background: var(--main-color);
+	color: #fff;
+}
+
+.replace:not(.logo),
+.site-header .site-logo,
+.main-nav > .navitems > .navitem.main-nav-activity .icon {
+    -webkit-filter: invert(100%) hue-rotate(190deg);
+    filter: invert(100%) hue-rotate(190deg);
+}
+
+.site-body,
+.main-nav > .navitems > .nav-account .subnav {
+    background: var(--main-background);
+}
+.main-nav > .navitems > .nav-account .subnav {
+	border-radius: 2px;
+	box-shadow: none;
+	border: 1px solid var(--dimmer-text);
+}
+.main-nav > .navitems > .nav-account .subnav li a:hover,
+.main-nav > .navitems > .nav-account .subnav li a.toggle-menu:hover {
+	background-color: var(--main-background);
+	color: var(--main-color)!important;
+}
+
+.site-header, .-is-mini-nav .profile-navigation, .activity-row.-basic, .activity-settings,
+.page-footer,
+.load-more-button, .notes-button, .pagination .paginate-ajax a, .pagination .paginate-ajax span, .pagination .paginate-nextprev a, .pagination .paginate-nextprev span,
+.actions-panel > ul > li,
+.textarea,
+.-is-not-mini-nav .profile-navigation,
+.poster {
+    background-color: var(--second-background);
+}
+.backdropped .site-header .site-header-bg {
+    background-image: none;
+}
+.actions-panel > ul > li,
+.actions-panel > ul > li a,
+ .action-large .action {
+	color: var(--main-text);
+}
+.actions-panel > ul > li:hover,
+.actions-panel > ul > li a:hover,
+ .action-large .action:hover {
+	color: var(--dimmer-text);
+}
+
+.watchedstate-avatar > .review, .watchedstate-avatar > .story, .watchedstate-avatar > .watchlist {
+	top: 0px;
+}
+
+a.target,
+.title-3,
+.title-2 a, .title-3 a, .title-4 a,
+.sub-nav a,
+.like-link, .like-link a, .like-link span, .panel-share .permalink,
+.main-nav > .navitems > .navitem > .toggle-menu,
+.page-footer a,
+.body-text a,
+#tabbed-content header ul li a {
+    color: var(--main-text)!important;
+}
+.main-nav > .navitems > .navitem > .navlink, .main-nav > .navitems > .navitem > .toggle-menu,
+.profile-navigation .navlist > .navitem.-active .navlink,
+.main-nav > .navitems > .nav-account .subnav li a.toggle-menu,{
+	color: var(--main-text)!important;
+}
+.profile-navigation .navlist > .navitem .navlink {
+	color: var(--dimmer-text);
+}
+.profile-navigation .navlist > .navitem .navlink:hover {
+	color: var(--main-text)!important;
+}
+
+body, .name, 
+.film-title, .headline-1, .headline-2, .headline-3, .headline-4,
+.film-detail-content .headline-2 > a, .film-detail-content .headline-3 > a,
+.activity-settings,
+.icon,
+.activity-row.-basic,
+.activity-table a.target .context,
+.load-more-button, .notes-button, .pagination .paginate-ajax a, .pagination .paginate-ajax span, .pagination .paginate-nextprev a, .pagination .paginate-nextprev span,
+.title-0, .title-1, .title-2, .title-3, .title-4,
+.profile-statistic .value,
+.film-header-lockup p:not(#user-actions-menu) a:not(.play),
+.film-header-lockup p:not(#user-actions-menu),
+.column-block h3 span {
+    color: var(--main-text)!important;
+}
+
+a.target:hover,
+.title-2 a:hover, .title-3 a:hover, .title-4 a:hover,
+.sub-nav a:hover,
+.film-detail-content .headline-2 > a:hover,
+.film-detail-content .headline-3 > a:hover,
+.like-link:hover, .like-link a:hover, .like-link span:hover, .panel-share .permalink:hover,
+.main-nav > .navitems > .navitem > .navlink:hover, .main-nav > .navitems > .navitem > .toggle-menu:hover,
+.page-footer a:hover,
+.body-text a:hover,
+.film-header-lockup p:not(#user-actions-menu) a:not(.play):hover {
+    color: var(--dimmer-text)!important;
+}
+.load-more-button:hover, .notes-button:hover, .pagination .paginate-ajax a:hover, .pagination .paginate-ajax span:hover, .pagination .paginate-nextprev a:hover, .pagination .paginate-nextprev span:hover{
+    background-color: var(--dimmer-text)!important;
+}
+
+.sub-nav li.selected a,
+.sub-nav li.selected a:active, .sub-nav li.selected a:hover,
+.sub-nav a:hover,
+#tabbed-content header ul li.selected a,
+#tabbed-content header ul li a:hover {
+    color: var(--main-text)!important; 
+    border-bottom-color: var(--main-text);
+}
+.profile-navigation .navlist > .navitem .navlink::before {
+    background-color: var(--main-text);
+}
+
+.-is-not-mini-nav .profile-navigation {
+    border: none;
+}
+
+.film-header-lockup .headline-1,
+.film-header-lockup p:not(#user-actions-menu),
+.poster {
+    text-shadow: none!important;
+    box-shadow: none!important;
+}
+.column-block h3 span {
+    background-color: rgba(0,0,0,0);
+}
+.text-slug {
+	background-color: var(--second-background);
+}
+.text-slug:hover {
+	background-color: var(--hover-background)!important;
+	color: var(--dimmer-text)!important;
+}
+.micro-button {
+	border-color: var(--second-background)!important;
+}
+.micro-button:hover {
+	color: var(--dimmer-text)!important;
+	border-color: var(--hover-background)!important;
+}
+.rating-histogram i {
+	background-color: var(--dimmer-text);
+}
+.rating-histogram a:hover i {
+	background-color: var(--main-text);
+}
+.person-yir-promo .yir-selector {
+	background-color: var(--second-background);
+}
+.person-yir-promo .section-heading,
+.person-yir-promo .styled-number {
+	color: var(--main-text)!important;
+}
+.logged-summary li h3 {
+	color: var(--main-background)!important;
+}
+.film-list-wrapper .list-frame:hover .overlay, .poster .frame:hover .overlay,
+.list-link:active::after, .list-link:hover::after {
+	border: 3px solid var(--main-color);
+}
+.film-list-wrapper .overlay, .poster .overlay,
+.list-link::after {
+	border: 1px solid var(--main-color);
+}
+.logged-summary li dl dd a:active, .logged-summary li dl dd a:hover {
+	color: var(--main-color);
+}
+.activity-row.-basic,
+.activity-row.-basic + .-newlist, .activity-row.-basic + .-review, .activity-row.-basic + .-story {
+	border-top: 1px solid var(--main-background)!important;
+	border-bottom: none!important;
+}
+.button.-following,
+.button.button-action,
+.button.js-button-following {
+	background-color: var(--main-color);
+}
+.button.-following:hover,
+.button.button-action:hover,
+.button.js-button-following:hover,
+.button.button-add-menu .toggle:hover {
+	background-color: var(--main-text)!important;
+}
+.button.-following:active,
+.button.-following:focus,
+.button.button-action:active,
+.button.button-action:focus,
+.button.js-button-following:active,
+.button.js-button-following:focus {
+	background-color: var(--main-color)!important;
+}
+
+#cboxOverlay {
+	opacity: 0.7!important;
+}
+#cboxContent,
+.segmented-control > .options {
+	background-color: var(--main-background);
+	box-shadow: none;
+}
+#colorbox.-addtolist .modal-container > .header,
+.modal-container > .footer {
+	background-color: var(--second-background);
+}
+.modal-container.-mini > .header {
+	border-bottom: none;
+}
+.segmented-control > .options > .option.-selected,
+.segmented-control > .options > .option[aria-current="true"],
+.segmented-control > .options > .option[aria-selected="true"] {
+	background: var(--main-color);
+	color: var(--main-background);
+}
+.list-selection > .list::before {
+	background-color: var(--second-background)!important;
+	height: 0;
+}
+.list-selection .list .name:hover {
+	color: var(--main-color)!important;
+}
+.list-selection > .list.-checked {
+	background-color: var(--hover-background);
+}
+#content-nav {
+	border-bottom: none;
+}
+
+
+@css { /* https://github.com/stylus/stylus/issues/2380 */
+.backdrop-wrapper > .backdropmask::before {
+    background-image:
+        linear-gradient(90deg,
+            var(--main-background) 0,
+            rgba(var(--main-background-rgb),.98556487) .97%,
+            rgba(var(--main-background-rgb),.9451312) 2.07833333%,
+            rgba(var(--main-background-rgb),.88300656) 3.29666667%,
+            rgba(var(--main-background-rgb),.80349854) 4.60166667%,
+            rgba(var(--main-background-rgb),.71091472) 5.96666667%,
+            rgba(var(--main-background-rgb),.60956268) 7.365%,
+            rgba(var(--main-background-rgb),.50375) 8.77166667%,
+            rgba(var(--main-background-rgb),.39778426) 10.16%,
+            rgba(var(--main-background-rgb),.29597303) 11.505%,
+            rgba(var(--main-background-rgb),.20262391) 12.78%,
+            rgba(var(--main-background-rgb),.12204446) 13.95833333%,
+            rgba(var(--main-background-rgb),.05854227) 15.01666667%,
+            rgba(var(--main-background-rgb),.01642493) 15.92833333%,
+            rgba(var(--main-background-rgb),0) 16.66666667%,
+            rgba(var(--main-background-rgb),0) 83.33333333%,
+            rgba(var(--main-background-rgb),.01642493) 84.07166667%,
+            rgba(var(--main-background-rgb),.05854227) 84.98333333%,
+            rgba(var(--main-background-rgb),.12204446) 86.04166667%,
+            rgba(var(--main-background-rgb),.20262391) 87.22%,
+            rgba(var(--main-background-rgb),.29597303) 88.495%,
+            rgba(var(--main-background-rgb),.39778426) 89.84%,
+            rgba(var(--main-background-rgb),.50375) 91.22833333%,
+            rgba(var(--main-background-rgb),.60956268) 92.635%,
+            rgba(var(--main-background-rgb),.71091472) 94.03333333%,
+            rgba(var(--main-background-rgb),.80349854) 95.39833333%,
+            rgba(var(--main-background-rgb),.88300656) 96.70333333%,
+            rgba(var(--main-background-rgb),.9451312) 97.92166667%,
+            rgba(var(--main-background-rgb),.98556487) 99.03%,
+            var(--main-background)
+            ),
+        linear-gradient(0deg,
+            var(--main-background) 0,
+            var(--main-background) 21.48148148%,
+            rgba(var(--main-background-rgb),.98556487) 23.63703704%,
+            rgba(var(--main-background-rgb),.9451312) 26.1%,
+            rgba(var(--main-background-rgb),.88300656) 28.80740741%,
+            rgba(var(--main-background-rgb),.80349854) 31.70740741%,
+            rgba(var(--main-background-rgb),.71091472) 34.74074074%,
+            rgba(var(--main-background-rgb),.60956268) 37.84814815%,
+            rgba(var(--main-background-rgb),.50375) 40.97407407%,
+            rgba(var(--main-background-rgb),.39778426) 44.05925926%,
+            rgba(var(--main-background-rgb),.29597303) 47.04814815%,
+            rgba(var(--main-background-rgb),.20262391) 49.88148148%,
+            rgba(var(--main-background-rgb),.12204446) 52.5%,
+            rgba(var(--main-background-rgb),.05854227) 54.85185185%,
+            rgba(var(--main-background-rgb),.01642493) 56.87777778%,
+            rgba(var(--main-background-rgb),0) 58.51851852%
+            )
+	}
+}
+}
