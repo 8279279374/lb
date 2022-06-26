@@ -200,6 +200,7 @@
             --dimmer-text: dimmerText;
             --shadow: 0 1px 0.5px colorShadow;
         }
+        --sprite: https://raw.githubusercontent.com/8279279374/lb/main/assets/sprite.svg;
     }
 
 * {
@@ -469,7 +470,9 @@ a.target:hover,
 #content-nav {
 	border-bottom: none;
 }
-
+.action-large .action::before {
+    background-image: var(--sprite);
+}
 
 @css { /* https://github.com/stylus/stylus/issues/2380 */
 .backdrop-wrapper > .backdropmask::before {
