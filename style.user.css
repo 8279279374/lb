@@ -58,13 +58,14 @@
         --main-text: #4C4F69;
         --dimmer-text: #7C7F93;
         --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
-        --sprite: "https://raw.githubusercontent.com/8279279374/lb/main/assets/sprite.svg";
+        --sprite: url(https://raw.githubusercontent.com/8279279374/lb/main/assets/sprite.svg);
 
         if stylus-deepdark-style=="Catppuccin-Latte-Green" {
             --main-color: #40A02B;
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Lavender" {
             --main-color: #7287FD;
+            --sprite: url(https://raw.githubusercontent.com/8279279374/lb/main/assets/sprite-lavender.svg);
         }
         else if stylus-deepdark-style=="Catppuccin-Latte-Flamingo" {
             --main-color: #DD7878;
@@ -382,7 +383,7 @@ a.target:hover,
 	border-bottom: none;
 }
 .action-large .action::before {
-    background-image: url(var(--sprite));
+    background-image: var(--sprite);
 }
 
 @css { /* https://github.com/stylus/stylus/issues/2380 */
